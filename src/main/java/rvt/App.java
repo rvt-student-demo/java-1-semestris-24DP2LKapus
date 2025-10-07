@@ -5,17 +5,18 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Give a number: ");
-        int number = Integer.valueOf(scanner.nextLine());
-        if (number > 0) {
-            System.out.println("The number is positive.");}
-        else {
-            System.out.println("The number is not positive.");
+        System.out.println("Enter first word: ");
+        String word = scanner.nextLine();
+        System.out.println("Enter second word: ");
+        String second = scanner.nextLine();
+        int times = word.length();
+        
+        while (times > count) {
+            System.out.println(word);
+            count ++;
+            
         }
-
-        
-        
-    }
-
     
+           
+    }  
 }
