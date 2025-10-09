@@ -1,22 +1,23 @@
 package rvt;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int[] IntArr = new int[5];
 
-        System.out.println("Enter first word: ");
-        String word = scanner.nextLine();
-        System.out.println("Enter second word: ");
-        String second = scanner.nextLine();
-        int times = word.length();
+        //String[] stringMasivs = new String[7];
+        //double[] doubleMasivs = new double[9];
+        intArr[0] = 9;
         
-        while (times > count) {
-            System.out.println(word);
-            count ++;
-            
-        }
-    
+       
+
+
+        System.out.println(Arrays.toString(intArr));
+
+
+        
            
     }  
 }
