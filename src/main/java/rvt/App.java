@@ -1,23 +1,43 @@
 package rvt;
-import java.util.Arrays;
+import java.util.*;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        Statistics statistics = new Statistics();
+        Statistics all = new Statistics();
+        Statistics even = new Statistics();
+        Statistics odd = new Statistics();
         Scanner scanner = new Scanner(System.in);
-        int[] IntArr = new int[5];
+        System.out.println("Enter numbers: ");
 
-        //String[] stringMasivs = new String[7];
-        //double[] doubleMasivs = new double[9];
-        intArr[0] = 9;
+        while(true) {
+            int number = Integer.valueOf(scanner.nextLine());
+            if(number == -1) {
+                break;
+            }
+
+            all.addNumber(number);
+            if (number % 2 == 0) {
+                even.addNumber(number);
+            }
+            else {
+            odd.addNumber(number);
+        }}
+
+        System.out.println(statistics.toString());
+    
+
+
+
         
-       
-
-
-        System.out.println(Arrays.toString(intArr));
-
-
         
-           
-    }  
+        System.out.println("Count: " + statistics.getCount());
+        System.out.println("Sum: " + statistics.sum());
+        System.out.println("Average: " + statistics.average());
+            
+    }
 }
+
+
+
