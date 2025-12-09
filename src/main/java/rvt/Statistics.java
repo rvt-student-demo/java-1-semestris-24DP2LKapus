@@ -11,7 +11,7 @@ public class Statistics {
         count = 0;
     }
     
-    public String to String() {
+    public String toString() {
         return "Count:" + count + "\n" + 
         "Sum: " + sum + "\n" + "Average:" + average();
     }
