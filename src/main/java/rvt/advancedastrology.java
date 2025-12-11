@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class advancedastrology {
     public static void main(String[] args) {
         
-        christmasTree(30);;
+        christmasTree(30);
     }
 
     public static void printSpaces(int number) {
